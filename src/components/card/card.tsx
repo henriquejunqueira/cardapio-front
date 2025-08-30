@@ -10,13 +10,13 @@ interface CardProps {
 // Card component using destructured props
 export function Card({ price, image, title }: CardProps) {
   return (
+    // Card container
     <div className='card'>
-      {' '}
-      {/* Card container */}
-      <img src='' alt='' /> {/* Card image */}
-      <h2></h2> {/* Card title */}
+      <img src={image} alt='' /> {/* Card image */}
+      <h2>{title}</h2> {/* Card title */}
       <p>
         <b>Valor:</b> {/* Label for price */}
+        {price}
       </p>
     </div>
   );

@@ -1,16 +1,22 @@
+import './card.css';
+
+// Defines the props for the Card component
 interface CardProps {
-  price: number;
-  title: string;
-  image: string;
+  price: number; // Price of the item
+  title: string; // Title of the item
+  image: string; // Image URL of the item
 }
 
+// Card component using destructured props
 export function Card({ price, image, title }: CardProps) {
   return (
     <div className='card'>
-      <img src='' alt='' />
-      <h2></h2>
+      {' '}
+      {/* Card container */}
+      <img src='' alt='' /> {/* Card image */}
+      <h2></h2> {/* Card title */}
       <p>
-        <b>Valor:</b>
+        <b>Valor:</b> {/* Label for price */}
       </p>
     </div>
   );
